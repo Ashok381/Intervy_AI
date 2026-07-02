@@ -9,7 +9,9 @@ const startServer = async () => {
     app.on("error", (err) => {
       console.error("Server error:", err);
     });
-
+    app.get('/'  , (req , res )=>{
+      res.send("backend is live on portal") ;  
+    }); 
     app.listen(process.env.PORT || 3000, () => {
       console.log(`server is running on port ${process.env.PORT || 3000}`);
     });
