@@ -30,6 +30,7 @@ const generateAccesTokenAndRefreshToken = async (user) => {
 const option = {
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
+  sameSite: "none",
 };
 
 const buildValidationErrors = (error) => {
