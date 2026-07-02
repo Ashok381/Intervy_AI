@@ -1,0 +1,173 @@
+.dashboard_card{
+    width:100vw;
+    min-height:100vh;
+    padding:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    background:#f6f6f6;
+    overflow:hidden;
+}
+
+.dashboardContainer{
+    background-color: blue;
+    margin-top: 4rem;
+    width:100%;
+    max-width:1800px;
+     padding: 1rem;
+    display:flex;
+    gap:20px;
+    padding-top: 1.5rem;
+    justify-content:center;
+    align-items:start;
+
+    border-top: 10px solid #5cf901;
+    overflow-y:auto;
+}
+
+/* Common Card */
+
+.childclassofDashboard{
+
+    background:rgb(255, 255, 255);
+
+    border-radius:16px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:stretch;
+}
+
+.reportContainer{
+   
+    background:rgb(255, 255, 255);
+
+    border-radius:16px;
+
+    box-shadow:10px 10px 30px rgba(151, 253, 9, 0.08);
+     padding: 5px;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+   
+
+    display:flex;
+    flex-direction:column;
+    align-items: stretch ;
+   
+    flex:2;
+    max-width: 100vh;
+    min-width:700px;
+    overflow-y: auto;
+}
+
+.report_child{
+
+    flex:1;
+    background-color: #f6f6f6;
+    width:100%;
+   margin-top:15px;
+    overflow-y:auto;
+}
+
+
+.buttonContainer{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+   background-color: rgb(255, 255, 255);
+   padding: 20px;
+     
+     width:100%;
+     border-radius: 30px;
+    overflow-y:auto;
+
+    
+}
+
+.buttonContainer button{
+    padding: 10px;
+    min-height: 2rem;
+    max-height: 3rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.TodolistContainer{
+
+    flex:1;
+
+    min-width:320px;
+
+    min-height:350px;
+}
+
+
+.secondChildofdshboard{
+
+    width:300px;
+
+    height:fit-content;
+
+    text-align:center;
+}
+
+.secondChildofdshboard button{
+
+    width:100%;
+
+    margin-top:15px;
+}
+
+/* ========================= */
+/* Scrollbar */
+/* ========================= */
+
+.buttonContainer::-webkit-scrollbar,
+.report_child::-webkit-scrollbar{
+
+    width:8px;
+}
+
+.buttonContainer::-webkit-scrollbar-thumb,
+.report_child::-webkit-scrollbar-thumb{
+
+    background:#ffffff;
+
+    border-radius:20px;
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media(max-width:1200px){
+
+.dashboardContainer{
+
+    flex-direction:column;
+}
+
+.reportContainer,
+.TodolistContainer,
+.secondChildofdshboard{
+
+    width:100%;
+    min-width:unset;
+}
+}

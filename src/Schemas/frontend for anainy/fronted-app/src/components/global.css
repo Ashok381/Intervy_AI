@@ -1,0 +1,182 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+.main_card{
+     height: 100vh;
+    padding: 2rem;
+
+    background: rgba(13, 9, 9, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(237, 172, 172, 0.15);
+    border-top: 1px solid rgba(33, 1, 1, 0.3);
+    border-left: 1px solid rgba(249, 11, 11, 0.3);
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 8px 32px rgba(49, 12, 12, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    
+}
+.nav_card{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right:20px ;
+    width: 100vw;
+    height: fit-content;
+    background: rgba(2, 246, 22, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(237, 172, 172, 0.15);
+    border-top: 1px solid rgba(33, 1, 1, 0.3);
+    border-left: 1px solid rgba(249, 11, 11, 0.3);
+
+    box-shadow:
+        0 8px 32px rgba(49, 12, 12, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+  position: fixed;
+    top: 0;
+    z-index: 100;
+
+
+}
+a{
+    text-decoration: none;
+      color: rgb(0, 0, 0);
+}
+
+a:active{
+    background-color: aquamarine;
+}
+.active_link{
+    background-color: rgba(255, 153, 0, 0.849);
+    padding: 5px;
+    border-radius: 10px;
+}
+.login_card{
+    min-height: 100vh;
+    height:max-content;
+    padding: 2rem;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgb(3, 127, 152);
+    border-top: 1px solid rgba(53, 2, 2, 0.905);
+    border-left: 1px solid rgba(249, 11, 11, 0.3);
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 8px 32px rgba(49, 12, 12, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.formcard{
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    gap: 1rem;
+     background: rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgb(3, 127, 152);
+    border-top: 1px solid rgba(53, 2, 2, 0.905);
+    border-left: 1px solid rgba(249, 11, 11, 0.3);
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 8px 32px rgba(49, 12, 12, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+.symmelogin{
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: nowrap;
+}
+
+button , input[type="button"] , li {
+     background-color: rgb(77, 255, 0);
+    color: rgb(110, 64, 64);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+section li {
+    margin-bottom: 10px;
+    cursor:default ;
+}
+.login_form input{
+    padding: 3px;
+    padding-left: 10px;
+    border-radius: 8px;
+
+}
+.label_form{
+    gap: 1.35rem;
+}
+
+.loading_card{
+    background-color: rgb(30, 21, 9);
+    color: rgb(255, 247, 2);
+}
+
+/* Info banner (renamed from ".info" to avoid clashing with About.jsx's
+   profile-row ".info" class, which was getting position:fixed applied
+   to it by accident) */
+.info-banner{
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+    max-width: 320px;
+    width: fit-content;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
